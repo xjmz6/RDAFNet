@@ -1,0 +1,19 @@
+###############
+GPU: [0]
+
+MODEL:
+  NAME: MSRDAFNet
+  MODE: deblur    #
+  ARGS:
+    in_channels: 3
+    out_channels: 3
+
+VAL:  
+  SAVE_IMG:  true 
+  PRETRAIN_MODEL: GOPRO.pth    ## pretrain_model
+  VAL_PS:  ~                   ## patchsize of val
+
+PATH:
+  VAL_DATASET: './GOPRO/test'
+
+
