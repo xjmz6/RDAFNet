@@ -2,7 +2,7 @@
 
 Demo of multi-stage RDAFNet on deblurring.
 
-- Download the datasets modified your [dataset path](https://github.com/xjmz6/RDAFNet/blob/main/options/train/deblur/MSRDAFNet.yml#26-27)
+- Download the datasets modified your [dataset path](https://github.com/xjmz6/RDAFNet/blob/main/options/train/deblur/MSRDAFNet.yml#L26-L27)
 
 - Train the multi-stage RDAFNet for deblurring with default arguments by running
 
@@ -14,12 +14,12 @@ python train_deblur.py
 
 Demo on multi-stage RDAFNet.
 
-### Download the pre-training models of [multi-stage RDAFNet](https://drive.google.com/drive/folders/1ixozsGTSX3JpJq2Bar_Ew8P9IuKwwFYl?usp=share_link) or [sing-stage RDAFNet](https://drive.google.com/drive/folders/1AqG7TwUyA81GmyvHD5O4IYXrcsEYdSVR?usp=share_link) and place them in `./log/deblur/MSRDAFNet/models/`.
+### Download the pre-training models of [multi-stage RDAFNet](https://drive.google.com/drive/folders/1ixozsGTSX3JpJq2Bar_Ew8P9IuKwwFYl?usp=share_link) or [sing-stage RDAFNet](https://drive.google.com/drive/folders/1AqG7TwUyA81GmyvHD5O4IYXrcsEYdSVR?usp=share_link) .
 
 #### Testing on GoPro and HIDE dataset
-- Download the datasets and modify the [dataset path](https://github.com/xjmz6/RDAFNet/blob/main/options/test/deblur/MSRDAFNet.yml#17) of the corresponding configuration file.
+- Download the datasets and modify the [dataset path](https://github.com/xjmz6/RDAFNet/blob/main/options/test/deblur/MSRDAFNet.yml#L17) of the corresponding configuration file.
 
-- Run
+- Place the weight in `./log/deblur/MSRDAFNet/models/` and run
 
 ```python
 python test_deblur.py 
@@ -27,16 +27,16 @@ python test_deblur.py
 
 
 #### Testing on real-world blurred images dataset
-- Download the real-world blurred images dataset and modify the [dataset path](https://github.com/xjmz6/RDAFNet/blob/main/options/test/deblur/MSRDAFNet.yml#17) of the corresponding configuration file.
-- Run
+- Download the real-world blurred images dataset and modify the [dataset path](https://github.com/xjmz6/RDAFNet/blob/main/options/test/deblur/MSRDAFNet.yml#L17) of the corresponding configuration file.
+- Place the weight in `./log/deblur/MSRDAFNet/models/` and run
 ```python
 python test_deblur_NR.py 
 ```
 
 #### Testing on SPAD dataset
 
-- Download the SPAD dataset and modify the [dataset path](https://github.com/xjmz6/RDAFNet/blob/main/options/test/derain/MSRDAFNet.yml#17) of the corresponding configuration file.
-- Run
+- Download the SPAD dataset and modify the [dataset path](https://github.com/xjmz6/RDAFNet/blob/main/options/test/derain/MSRDAFNet.yml#L17) of the corresponding configuration file.
+- Place the weight in `./log/derain/MSRDAFNet/models/` and run
 
 ```
 python test_derain.py 
