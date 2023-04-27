@@ -42,7 +42,7 @@ for ii, data_val in enumerate(val_loader, 1):
     input_ = data_val[0].cuda()
 
     with torch.no_grad():
-        factor = 8 ###### 2
+        factor =  2
         h,w = input_.shape[2], input_.shape[3]
         H,W = ((h+factor)//factor)*factor, ((w+factor)//factor)*factor
         padh = H-h if h%factor!=0 else 0
