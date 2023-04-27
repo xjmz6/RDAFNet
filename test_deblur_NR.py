@@ -10,7 +10,7 @@ import torch.nn.functional as F
 import utils
 from utils.logger import *
 import yaml
-with open('.options/test/deblur/MSRDAFNet.yml', mode='r') as f_yml:
+with open('options/test/deblur/MSRDAFNet.yml', mode='r') as f_yml:
     Loader, _ = ordered_yaml()
     opt = yaml.load(f_yml, Loader=Loader)
 
