@@ -23,8 +23,8 @@ TRAIN:
   VAL_PS:  ~             ## patchsize of val
 
 PATH:
-  TRAIN_DATASET: './GOPRO/train'
-  VAL_DATASET: './GOPRO/test'
+  TRAIN_DATASET: './GoPro/train'
+  VAL_DATASET: './GoPro/test'
 
 # Optimization arguments.
 OPTIM:  #default Adam
