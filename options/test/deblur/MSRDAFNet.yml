@@ -10,10 +10,10 @@ MODEL:
 
 VAL:  
   SAVE_IMG:  true 
-  PRETRAIN_MODEL: GOPRO.pth    ## pretrain_model
+  PRETRAIN_MODEL: GoPro.pth    ## pretrain_model
   VAL_PS:  ~                   ## patchsize of val
 
 PATH:
-  VAL_DATASET: './GOPRO/test'
+  VAL_DATASET: './GoPro/test'
 
 
